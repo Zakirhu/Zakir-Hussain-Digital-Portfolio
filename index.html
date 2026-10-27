@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<!--
+  ZAKIR HUSSAIN — PORTFOLIO
+  --------------------------------------------------------------------------
+  QUICK EDIT MAP
+  · All page copy and structure ....... this file (index.html)
+  · Colours, spacing and typography .. assets/css/main.css
+  · Motion and interactions .......... assets/js/main.js
+  · Contact details .................. email, phone and GitHub
+  · Certificates ..................... assets/img/certificates/ + Credentials section
+  · Project placeholders ............. search for "OPEN SLOT"
+  · Full editing instructions ........ README.md
+
+  Content supplied in the résumé and credential documents has been added.
+  Remaining project slots are intentionally marked placeholders.
+-->
+<html class="no-js" lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070c" id="themeColor">
+  <meta name="color-scheme" content="dark light">
+
+  <title>Zakir Hussain — Computer Science Educator &amp; Web Developer</title>
+  <meta name="description" content="Zakir Hussain is a PGT Computer Science and IT educator, web developer, and technology enthusiast creating practical, creative learning experiences for students.">
+  <meta name="author" content="Zakir Hussain">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / social preview. Replace the relative URL with your live domain after publishing. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zakir Hussain — Educator. Innovator. Developer.">
+  <meta property="og:description" content="Computer Science education, practical learning, and digital experiences built with purpose.">
+  <meta property="og:image" content="assets/img/og-cover.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zakir Hussain portfolio cover — portrait, educator, innovator, developer.">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Zakir Hussain">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zakir Hussain — Educator. Innovator. Developer.">
+  <meta name="twitter:description" content="Transforming Computer Science education through technology, creativity, and practical learning.">
+  <meta name="twitter:image" content="assets/img/og-cover.png">
+  <meta name="twitter:image:alt" content="Zakir Hussain portfolio cover — portrait, educator, innovator, developer.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.remove("no-js");
+      root.classList.add("js");
+      var theme = "dark";
+      try { theme = localStorage.getItem("zh-theme") || "dark"; } catch (error) {}
+      root.setAttribute("data-theme", theme);
+      root.style.colorScheme = theme;
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zakir Hussain",
+    "jobTitle": "PGT Computer Science / IT Educator & Web Developer",
+    "description": "Computer Science and IT educator, technology enthusiast, and web developer with a bachelor's and master's degree in Computer Science.",
+    "email": "zakhu1099@gmail.com",
+    "telephone": "+91 95411 67365",
+    "image": "assets/img/zakir-hussain-portrait.jpg",
+    "knowsAbout": [
+      "Computer Science Education",
+      "Information Technology",
+      "Python Programming",
+      "C Programming",
+      "C++ Programming",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Full-Stack Web Development",
+      "Educational Technology",
+      "Digital Learning Resources",
+      "MS Office",
+      "Lesson Planning",
+      "Classroom Management",
+      "Computer Laboratory Practicals"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Kashmir, Srinagar"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "I.K. Gujral Punjab Technical University, Jalandhar"
+      }
+    ],
+    "award": [
+      "Best Teacher of the Month — three times during the academic year 2020/21"
+    ],
+    "sameAs": [
+      "https://github.com/Zakirhu"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page-grain" aria-hidden="true"></div>
+  <div class="cursor cursor--dot" aria-hidden="true"></div>
+  <div class="cursor cursor--ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Intro loader -->
+  <div class="loader" id="loader" role="dialog" aria-modal="true" aria-labelledby="loaderMessage">
+    <div class="loader__ambient" aria-hidden="true"></div>
+    <div class="loader__grid" aria-hidden="true"></div>
+    <div class="loader__top">
+      <span class="loader__mark">ZH<span>.</span></span>
+      <span class="loader__year">PORTFOLIO / 2026</span>
+    </div>
+    <div class="loader__center">
+      <div class="loader__orb" aria-hidden="true">
+        <span class="loader__orb-ring"></span>
+        <span class="loader__orb-core">ZH</span>
+      </div>
+      <p class="loader__message" id="loaderMessage">Preparing the learning space</p>
+      <div class="loader__meter" aria-hidden="true"><span id="loaderBar"></span></div>
+      <p class="loader__count"><span id="loaderCount">00</span><span aria-hidden="true">%</span></p>
+    </div>
+    <div class="loader__bottom">
+      <p>Computer Science <span>/</span> Teaching <span>/</span> Making</p>
+      <button class="loader__skip" id="skipIntro" type="button">Skip intro <span aria-hidden="true">↗</span></button>
+    </div>
+  </div>
+
+  <!-- Site header -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Zakir Hussain — back to home">
+        <span class="brand__mark" aria-hidden="true">ZH<span class="brand__dot"></span></span>
+        <span class="brand__name">Zakir<br><span>Hussain</span></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#recognition" class="nav-link">Credentials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z"/>
+          </svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+        <a class="nav-connect" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-menu" id="mobileMenu" role="region" aria-label="Mobile menu" aria-hidden="true" inert>
+    <div class="mobile-menu__glow" aria-hidden="true"></div>
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__head">
+        <span>Navigation</span>
+        <span>ZH / 2026</span>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home"><span>01</span>Home<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#about"><span>02</span>About<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#experience"><span>03</span>Experience<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#skills"><span>04</span>Skills<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#projects"><span>05</span>Projects<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#teaching"><span>06</span>Teaching<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#recognition"><span>07</span>Credentials<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+        <a href="#contact"><span>08</span>Contact<span class="mobile-nav__arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>Educator. Innovator. Developer.</p>
+        <span>Always learning. Always building.</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="heroName">
+      <canvas class="hero__particles" id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__spotlight" aria-hidden="true"></div>
+      <div class="hero__aurora hero__aurora--cyan" aria-hidden="true"></div>
+      <div class="hero__aurora hero__aurora--violet" aria-hidden="true"></div>
+      <div class="hero__horizon" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <p class="hero__overline" data-hero style="--delay: 120ms">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>PGT Computer Science / IT</span>
+              <span class="hero__overline-slash" aria-hidden="true">/</span>
+              <span class="hero__overline-muted">Educator &amp; Developer</span>
+            </p>
+
+            <h1 class="hero__name" id="heroName" aria-label="Zakir Hussain">
+              <span class="hero__name-line"><span class="hero__name-inner">Zakir</span></span>
+              <span class="hero__name-line hero__name-line--accent"><span class="hero__name-inner">Hussain<span class="hero__name-dot" aria-hidden="true">.</span></span></span>
+            </h1>
+
+            <p class="hero__tagline" data-hero style="--delay: 420ms">
+              <span>Educator<span aria-hidden="true">.</span></span>
+              <span>Innovator<span aria-hidden="true">.</span></span>
+              <span class="hero__tagline-accent">Developer<span aria-hidden="true">.</span></span>
+            </p>
+
+            <p class="hero__description" data-hero style="--delay: 520ms">
+              Transforming Computer Science Education Through Technology, Creativity, and Practical Learning.
+            </p>
+
+            <div class="hero__actions" data-hero style="--delay: 620ms">
+              <a class="btn btn--primary" href="#about" data-magnetic>
+                <span>Explore My Portfolio</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 4v15M6.5 13.5 12 19l5.5-5.5"/></svg>
+                </span>
+              </a>
+              <a class="btn btn--ghost" href="#contact" data-magnetic>
+                <span>Let's Connect</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></svg>
+                </span>
+              </a>
+            </div>
+
+            <a class="hero__now" href="#projects" data-hero style="--delay: 720ms">
+              <span class="hero__now-label"><span class="pulse-dot" aria-hidden="true"></span>Now building</span>
+              <span class="hero__now-value">Learn with Zakir <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+
+          <div class="hero-visual" data-parallax="0.06">
+            <div class="hero-visual__inner">
+              <div class="hero-visual__aura" aria-hidden="true"></div>
+              <div class="hero-visual__topbar">
+                <span class="mono-label"><span class="status-dot" aria-hidden="true"></span>The Learning Core</span>
+                <span class="mono-label">ZH / 001</span>
+              </div>
+
+              <div class="core-stage" id="coreStage">
+                <div class="core-orbit core-orbit--one" aria-hidden="true"><span></span></div>
+                <div class="core-orbit core-orbit--two" aria-hidden="true"><span></span></div>
+                <div class="core-orbit core-orbit--three" aria-hidden="true"><span></span></div>
+
+                <canvas class="core-canvas" id="coreCanvas" aria-hidden="true"></canvas>
+
+                <div class="core-hub" aria-hidden="true">
+                  <span class="core-hub__eyebrow">CS</span>
+                  <span class="core-hub__mark">ZH</span>
+                  <span class="core-hub__sub">Educator</span>
+                </div>
+
+                <span class="core-glyph core-glyph--one" aria-hidden="true">{ }</span>
+                <span class="core-glyph core-glyph--two" aria-hidden="true">&lt;/&gt;</span>
+                <span class="core-glyph core-glyph--three" aria-hidden="true">λ</span>
+
+                <span class="core-tag core-tag--one"><span aria-hidden="true"></span>Python</span>
+                <span class="core-tag core-tag--two"><span aria-hidden="true"></span>Pedagogy</span>
+                <span class="core-tag core-tag--three"><span aria-hidden="true"></span>Web</span>
+
+                <span class="core-cross core-cross--tl" aria-hidden="true"></span>
+                <span class="core-cross core-cross--tr" aria-hidden="true"></span>
+                <span class="core-cross core-cross--bl" aria-hidden="true"></span>
+                <span class="core-cross core-cross--br" aria-hidden="true"></span>
+              </div>
+
+              <div class="hero-visual__footer">
+                <span class="mono-label">Logic / Craft / Curiosity</span>
+                <span class="mono-label live-label"><i aria-hidden="true"></i>In motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__footer" data-hero style="--delay: 820ms">
+          <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+            <span class="scroll-cue__icon" aria-hidden="true">
+              <span></span>
+              <svg viewBox="0 0 24 24"><path d="M12 4v15M6.5 13.5 12 19l5.5-5.5"/></svg>
+            </span>
+            <span>Scroll to explore</span>
+          </a>
+          <div class="hero__credentials">
+            <span>Master of Computer Science</span><i aria-hidden="true"></i><span>Bachelor of Computer Science</span><i aria-hidden="true"></i><span>PGT Computer Science / IT</span>
+          </div>
+          <p class="hero__edition">Portfolio <span>·</span> 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Computer Science Education</span><i>✳</i>
+          <span>Practical Programming</span><i>✳</i>
+          <span>Web Development</span><i>✳</i>
+          <span>Digital Learning</span><i>✳</i>
+          <span>Classroom Innovation</span><i>✳</i>
+        </div>
+        <div class="marquee__group">
+          <span>Computer Science Education</span><i>✳</i>
+          <span>Practical Programming</span><i>✳</i>
+          <span>Web Development</span><i>✳</i>
+          <span>Digital Learning</span><i>✳</i>
+          <span>Classroom Innovation</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section class="section section--about" id="about">
+      <div class="section-aura section-aura--left" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">01</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>About</span>
+            </p>
+            <h2 class="section-title" data-split>Teaching technology.<br>Building <em>possibility.</em></h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 01</span>
+            <p class="section-lead">An educator's perspective, a developer's toolkit, and a belief that the best learning is something students can build with.</p>
+          </div>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="about-lead" data-reveal>I teach Computer Science. I build with it. And I'm most at home where the two meet.</p>
+            <div class="about-body" data-reveal style="--delay: 100ms">
+              <p>I'm Zakir Hussain — a PGT Computer Science and IT educator, web developer, and technology enthusiast. My bachelor's and master's degrees in Computer Science gave me the technical foundation; the classroom gave that knowledge a purpose.</p>
+              <p>I've taught senior-secondary Computer Science and IT, developed curriculum-aligned lessons, run practical lab sessions, and tracked student progress through individual feedback and regular reports. Outside the classroom, I create digital resources and web experiences that help students keep learning beyond the lesson.</p>
+            </div>
+            <div class="about-tags" data-reveal style="--delay: 180ms">
+              <span class="skill-pill" style="--float-delay: 0s">Python</span>
+              <span class="skill-pill" style="--float-delay: -1.4s">C / C++</span>
+              <span class="skill-pill" style="--float-delay: -2.8s">HTML / CSS</span>
+              <span class="skill-pill" style="--float-delay: -0.7s">JavaScript</span>
+              <span class="skill-pill" style="--float-delay: -2.1s">MS Office</span>
+              <span class="skill-pill" style="--float-delay: -3.4s">Lesson planning</span>
+              <span class="skill-pill" style="--float-delay: -4.2s">Lab practice</span>
+            </div>
+            <div class="about-signature" data-reveal style="--delay: 240ms">
+              <span class="about-signature__rule" aria-hidden="true"></span>
+              <p>Logic in the lesson.<br>Craft in the code.<br><em>Care in the classroom.</em></p>
+            </div>
+          </div>
+
+          <div class="profile-wrap" data-reveal style="--delay: 120ms">
+            <div class="profile-card" data-tilt data-tilt-max="3.5" role="group" aria-label="Professional profile">
+              <div class="profile-card__noise" aria-hidden="true"></div>
+              <div class="profile-card__top">
+                <span class="mono-label">Profile / 01</span>
+                <span class="profile-card__status"><i aria-hidden="true"></i>Educator</span>
+              </div>
+
+              <div class="profile-card__art">
+                <div class="profile-card__orbit profile-card__orbit--a" aria-hidden="true"></div>
+                <div class="profile-card__orbit profile-card__orbit--b" aria-hidden="true"></div>
+                <div class="profile-card__orbit profile-card__orbit--c" aria-hidden="true"></div>
+                <div class="profile-portrait">
+                  <picture>
+                    <source srcset="assets/img/zakir-hussain-portrait.webp" type="image/webp">
+                    <img src="assets/img/zakir-hussain-portrait.jpg" alt="Portrait of Zakir Hussain" width="405" height="405" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="profile-portrait__tint" aria-hidden="true"></span>
+                  <span class="profile-portrait__scan" aria-hidden="true"></span>
+                </div>
+                <span class="profile-card__code" aria-hidden="true">&lt;/&gt;</span>
+                <span class="profile-card__spark" aria-hidden="true">✦</span>
+                <span class="profile-card__chip" aria-hidden="true">CS / IT</span>
+              </div>
+
+              <div class="profile-card__identity">
+                <p>Zakir Hussain</p>
+                <span>Computer Science Educator &amp; Developer</span>
+              </div>
+
+              <dl class="profile-facts">
+                <div><dt>Role</dt><dd>PGT Computer Science / IT</dd></div>
+                <div><dt>Education</dt><dd>Master's &amp; Bachelor's in Computer Science</dd></div>
+                <div><dt>Practice</dt><dd>Teaching · Web · EdTech</dd></div>
+              </dl>
+
+              <div class="profile-card__foot">
+                <span>Curiosity, compiled.</span>
+                <span class="profile-card__lines" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="journey__intro" data-reveal>
+            <p class="section-kicker section-kicker--small"><span class="section-kicker__number">01.1</span><span class="section-kicker__rule" aria-hidden="true"></span><span>The path</span></p>
+            <h3>From the fundamentals<br>to the <em>front of the room.</em></h3>
+            <p>Each stage added a new lens: how systems work, how software is made, and how understanding is taught.</p>
+          </div>
+
+          <div class="journey__track">
+            <article class="journey-step" data-reveal style="--delay: 0ms">
+              <div class="journey-step__top"><span class="journey-step__number">01</span><span class="journey-step__label">Foundation · 2016–20</span></div>
+              <h4>Bachelor of Computer Science</h4>
+              <p>University of Kashmir, Srinagar. Graduated with distinction across programming, databases, and practical labs.</p>
+            </article>
+            <article class="journey-step" data-reveal style="--delay: 80ms">
+              <div class="journey-step__top"><span class="journey-step__number">02</span><span class="journey-step__label">Depth · 2021–23</span></div>
+              <h4>Master of Computer Science</h4>
+              <p>I.K. Gujral Punjab Technical University, Jalandhar. Advanced study in programming, DBMS, networking, and software engineering.</p>
+            </article>
+            <article class="journey-step" data-reveal style="--delay: 160ms">
+              <div class="journey-step__top"><span class="journey-step__number">03</span><span class="journey-step__label">Classroom · 2022–25</span></div>
+              <h4>PGT Computer Science / IT</h4>
+              <p>Chain of DIPS Institution, Jalandhar. Curriculum, lesson planning, lab sessions, and student progress.</p>
+            </article>
+            <article class="journey-step" data-reveal style="--delay: 240ms">
+              <div class="journey-step__top"><span class="journey-step__number">04</span><span class="journey-step__label">In motion</span></div>
+              <h4>Builder</h4>
+              <p>Creating Learn with Zakir and digital learning resources that give students more ways to keep going.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TEACHING PHILOSOPHY
+         ============================================================ -->
+    <section class="section section--philosophy" id="philosophy">
+      <div class="philosophy-ghost" aria-hidden="true">iterate</div>
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">02</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Teaching philosophy</span>
+            </p>
+            <h2 class="section-title" data-split>Learning is a <em>loop,</em><br>not a straight line.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 02</span>
+            <p class="section-lead">Concepts become understanding when students have room to try, question, make mistakes, and try again.</p>
+          </div>
+        </header>
+
+        <div class="loop-flow">
+          <div class="loop-line" aria-hidden="true"><span></span></div>
+
+          <article class="loop-step" data-reveal style="--delay: 0ms">
+            <div class="loop-node" aria-hidden="true"><span>01</span></div>
+            <div class="loop-card">
+              <div class="loop-card__top"><span>Understand</span><span>Input</span></div>
+              <div class="loop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M4 16 16 5l12 11M8 13v12h16V13"/><path d="M13 25v-7h6v7"/></svg>
+              </div>
+              <h3>Learn</h3>
+              <p>Start with the why. Build a clear mental model before memorising the syntax.</p>
+              <span class="loop-card__note">Concepts before code</span>
+            </div>
+          </article>
+
+          <article class="loop-step" data-reveal style="--delay: 80ms">
+            <div class="loop-node" aria-hidden="true"><span>02</span></div>
+            <div class="loop-card">
+              <div class="loop-card__top"><span>Apply</span><span>Repetition</span></div>
+              <div class="loop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m12 10-7 6 7 6M20 10l7 6-7 6M18 6l-4 20"/></svg>
+              </div>
+              <h3>Practice</h3>
+              <p>Write the code, solve the problem, break it, fix it. Understanding lives in the reps.</p>
+              <span class="loop-card__note">Hands on the keyboard</span>
+            </div>
+          </article>
+
+          <article class="loop-step" data-reveal style="--delay: 160ms">
+            <div class="loop-node" aria-hidden="true"><span>03</span></div>
+            <div class="loop-card">
+              <div class="loop-card__top"><span>Make</span><span>Output</span></div>
+              <div class="loop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 4 5 10v12l11 6 11-6V10L16 4Z"/><path d="m5 10 11 6 11-6M16 16v12"/></svg>
+              </div>
+              <h3>Create</h3>
+              <p>Turn concepts into something original — a script, a page, a small tool with a real purpose.</p>
+              <span class="loop-card__note">Ideas made tangible</span>
+            </div>
+          </article>
+
+          <article class="loop-step" data-reveal style="--delay: 240ms">
+            <div class="loop-node" aria-hidden="true"><span>04</span></div>
+            <div class="loop-card">
+              <div class="loop-card__top"><span>Check</span><span>Evidence</span></div>
+              <div class="loop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m10.5 16 4 4 7.5-9"/></svg>
+              </div>
+              <h3>Test</h3>
+              <p>Use quizzes, lab tasks, and reflection to make understanding visible — to the student and the teacher.</p>
+              <span class="loop-card__note">Feedback over guesswork</span>
+            </div>
+          </article>
+
+          <article class="loop-step" data-reveal style="--delay: 320ms">
+            <div class="loop-node" aria-hidden="true"><span>05</span></div>
+            <div class="loop-card">
+              <div class="loop-card__top"><span>Refine</span><span>Growth</span></div>
+              <div class="loop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M26 16a10 10 0 1 1-3-7.1M26 5v7h-7"/><path d="M16 11v6l4 2"/></svg>
+              </div>
+              <h3>Improve</h3>
+              <p>Feed feedback forward. Iterate, refine, and return to the next challenge one level deeper.</p>
+              <span class="loop-card__note">The next version</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="loop-return" aria-hidden="true">
+          <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path class="loop-return__base" d="M1130 2C1130 62 70 62 70 2"/>
+            <path class="loop-return__glow" d="M1130 2C1130 62 70 62 70 2"/>
+          </svg>
+          <span>Repeat · refine · go deeper</span>
+        </div>
+
+        <div class="philosophy-statement" data-reveal>
+          <span class="philosophy-statement__mark" aria-hidden="true">“</span>
+          <blockquote>Understanding isn't proven by the first answer. It's revealed by the <em>second attempt.</em></blockquote>
+          <span class="philosophy-statement__caption">The classroom as a place to think out loud</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE
+         ============================================================ -->
+    <section class="section section--experience" id="experience">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">03</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Experience</span>
+            </p>
+            <h2 class="section-title" data-split>In the classroom.<br>In the <em>code.</em></h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 03</span>
+            <p class="section-lead">A professional practice shaped by teaching, technology, and the practical work that connects them.</p>
+          </div>
+        </header>
+
+        <div class="experience-layout">
+          <div class="experience-aside" data-reveal>
+            <p class="experience-aside__lead">Teaching is where the ideas get tested. Building is where they get sharper.</p>
+            <div class="focus-card">
+              <span class="mono-label">Focus areas</span>
+              <ol class="focus-list">
+                <li><span>01</span>Computer Science education</li>
+                <li><span>02</span>Practical programming</li>
+                <li><span>03</span>Web development</li>
+                <li><span>04</span>Digital learning</li>
+              </ol>
+            </div>
+            <p class="experience-aside__closing">The goal is simple: send students out with something they can do, not just something they've heard.</p>
+          </div>
+
+          <!-- EDIT EXPERIENCE
+               Core role details come from the supplied résumé. Add any earlier
+               teaching roles using the same article markup when verified. -->
+          <div class="timeline" id="experienceTimeline">
+            <div class="timeline__base" aria-hidden="true"><span class="timeline__beam"></span></div>
+
+            <article class="timeline-item" data-reveal>
+              <div class="timeline-item__node" aria-hidden="true"><span></span></div>
+              <div class="timeline-item__meta">
+                <span class="timeline-date">October 2022 — 2025</span>
+                <span class="tag">Teaching</span>
+              </div>
+              <h3>PGT Computer Science / IT</h3>
+              <p class="timeline-org">Chain of DIPS Institution<span class="dot-sep" aria-hidden="true">·</span>Jalandhar, Punjab</p>
+              <ul class="timeline-points">
+                <li>Developed and implemented a curriculum aligned with school guidelines for senior-secondary Computer Science and IT.</li>
+                <li>Prepared daily lesson plans, worksheets, and practical activities, and conducted hands-on lab sessions.</li>
+                <li>Tracked student progress, provided individual feedback, and prepared monthly progress reports and quarterly grades.</li>
+                <li>Supported school events, digital work, and technical requirements while coordinating with teachers and administration.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Curriculum</span><span class="tag">Lesson planning</span><span class="tag">CS &amp; IT</span><span class="tag">Lab practice</span>
+              </div>
+            </article>
+
+            <article class="timeline-item is-current" data-reveal style="--delay: 80ms">
+              <div class="timeline-item__node" aria-hidden="true"><span></span></div>
+              <div class="timeline-item__meta">
+                <span class="timeline-date">Independent — Ongoing</span>
+                <span class="tag tag--current">In progress</span>
+              </div>
+              <h3>Web Developer &amp; Digital Learning Creator</h3>
+              <p class="timeline-org">Independent project work<span class="dot-sep" aria-hidden="true">·</span>Remote</p>
+              <ul class="timeline-points">
+                <li>Building Learn with Zakir, a personal education platform for chapter notes, PDFs, question banks, previous-year papers, and MCQ practice.</li>
+                <li>Designing responsive web experiences with a focus on clarity, performance, and usability.</li>
+                <li>Exploring educational technology as a bridge between the curriculum and the tools students already use.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">HTML · CSS · JS</span><span class="tag">Full-stack</span><span class="tag">Digital learning</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section class="section section--skills" id="skills">
+      <div class="section-aura section-aura--right" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--skills">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">04</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Skills &amp; expertise</span>
+            </p>
+            <h2 class="section-title" data-split>Tools change.<br><em>Thinking</em> compounds.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 04</span>
+            <p class="section-lead">A toolkit for teaching ideas and making them real — from the whiteboard to the browser.</p>
+          </div>
+        </header>
+
+        <div class="skills-toolbar" data-reveal>
+          <div class="skill-filter" role="group" aria-label="Filter skills by category">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All <span>08</span></button>
+            <button class="filter-btn" type="button" data-filter="teaching" aria-pressed="false">Teaching <span>03</span></button>
+            <button class="filter-btn" type="button" data-filter="development" aria-pressed="false">Development <span>03</span></button>
+            <button class="filter-btn" type="button" data-filter="digital" aria-pressed="false">Digital <span>02</span></button>
+          </div>
+          <p class="skills-toolbar__note">No percentages. Just practice.</p>
+          <p class="sr-only" id="filterStatus" aria-live="polite">Showing all capabilities.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-wrap skill-wrap--wide" data-reveal data-category="teaching">
+            <article class="skill-card skill-card--feature" data-tilt data-tilt-max="2.5" data-accent="cyan">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">01 / Teaching</span><span class="skill-card__index">CS</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="7" r="3"/><circle cx="7" cy="23" r="3"/><circle cx="25" cy="23" r="3"/><path d="m14.5 9.5-6 11M17.5 9.5l6 11M10 23h12"/></svg>
+              </div>
+              <h3>Computer Science Education</h3>
+              <p>Turning complex ideas into clear, buildable steps — with curriculum planning, classroom management, and room for productive mistakes.</p>
+              <div class="tag-row"><span class="tag">Curriculum</span><span class="tag">Lesson planning</span><span class="tag">Classroom management</span><span class="tag">Communication</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap" data-reveal data-category="development" style="--delay: 60ms">
+            <article class="skill-card" data-tilt data-tilt-max="3" data-accent="violet">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">02 / Development</span><span class="skill-card__index">Py</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="20" rx="3"/><path d="m7 11 4 4-4 4M14 20h6"/></svg>
+              </div>
+              <h3>Python &amp; Programming Fundamentals</h3>
+              <p>From first Python scripts to C and C++ foundations, building clean logic and structured problem-solving habits.</p>
+              <div class="tag-row"><span class="tag">Python</span><span class="tag">C / C++</span><span class="tag">Problem solving</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap" data-reveal data-category="development" style="--delay: 120ms">
+            <article class="skill-card" data-tilt data-tilt-max="3" data-accent="blue">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">03 / Development</span><span class="skill-card__index">JS</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m9 8-6 8 6 8M23 8l6 8-6 8M18 6l-4 20"/></svg>
+              </div>
+              <h3>HTML, CSS &amp; JavaScript</h3>
+              <p>Responsive, accessible interfaces built with clean structure and thoughtful interaction.</p>
+              <div class="tag-row"><span class="tag">Semantic HTML</span><span class="tag">Responsive UI</span><span class="tag">DOM</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap" data-reveal data-category="development" style="--delay: 0ms">
+            <article class="skill-card" data-tilt data-tilt-max="3" data-accent="cyan">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">04 / Development</span><span class="skill-card__index">FS</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m16 4 10 5-10 5L6 9l10-5Z"/><path d="m6 15 10 5 10-5M6 22l10 5 10-5"/></svg>
+              </div>
+              <h3>Full-Stack Web Development</h3>
+              <p>Connecting front-end experiences with the data and logic that make them work.</p>
+              <div class="tag-row"><span class="tag">Frontend</span><span class="tag">Backend</span><span class="tag">Data</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap" data-reveal data-category="teaching" style="--delay: 60ms">
+            <article class="skill-card" data-tilt data-tilt-max="3" data-accent="violet">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">05 / Teaching</span><span class="skill-card__index">IT</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c3.5 3 5.5 7 5.5 11S19.5 24 16 27c-3.5-3-5.5-7-5.5-11S12.5 8 16 5Z"/></svg>
+              </div>
+              <h3>Information Technology</h3>
+              <p>Practical IT support, software installation, system maintenance, and confident use of everyday productivity tools.</p>
+              <div class="tag-row"><span class="tag">MS Office</span><span class="tag">Software setup</span><span class="tag">System maintenance</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap" data-reveal data-category="digital" style="--delay: 120ms">
+            <article class="skill-card" data-tilt data-tilt-max="3" data-accent="cyan">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">06 / Digital</span><span class="skill-card__index">Ed</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="16" rx="2"/><path d="M11 27h10M16 21v6M22 9l1.5 3L27 13.5 23.5 15 22 18l-1.5-3L17 13.5l3.5-1.5L22 9Z"/></svg>
+              </div>
+              <h3>Educational Technology</h3>
+              <p>Multimedia, presentation tools, and digital workflows that make lessons more active, connected, and personal.</p>
+              <div class="tag-row"><span class="tag">Multimedia</span><span class="tag">Presentation tools</span><span class="tag">Blended learning</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap skill-wrap--wide" data-reveal data-category="digital" style="--delay: 0ms">
+            <article class="skill-card skill-card--feature" data-tilt data-tilt-max="2.5" data-accent="blue">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">07 / Digital</span><span class="skill-card__index">DL</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M8 4h12l5 5v19H8V4Z"/><path d="M20 4v6h5M12 15h8M12 20h8M12 25h5"/></svg>
+              </div>
+              <h3>Digital Learning Resources</h3>
+              <p>Lesson content, worksheets, notes, and visual explainers designed to be clear, reusable, and available whenever a student needs them.</p>
+              <div class="tag-row"><span class="tag">Lesson content</span><span class="tag">Worksheets</span><span class="tag">PDF resources</span></div>
+            </article>
+          </div>
+
+          <div class="skill-wrap skill-wrap--wide" data-reveal data-category="teaching" style="--delay: 60ms">
+            <article class="skill-card skill-card--feature" data-tilt data-tilt-max="2.5" data-accent="violet">
+              <div class="skill-card__shine" aria-hidden="true"></div>
+              <div class="skill-card__head"><span class="mono-label">08 / Teaching</span><span class="skill-card__index">Lab</span></div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="4" y="5" width="24" height="17" rx="2"/><path d="M11 27h10M16 22v5M9 12h5M18 18l6-6"/><circle cx="24" cy="12" r="1.2"/></svg>
+              </div>
+              <h3>Computer Laboratory Practical Sessions</h3>
+              <p>Structured lab time that turns "I've seen this" into "I can build this" — through practice, testing, and technical support.</p>
+              <div class="tag-row"><span class="tag">Practical activities</span><span class="tag">C / C++ / Python</span><span class="tag">Technical support</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+<!-- EDIT PROJECTS
+         Learn with Zakir is a live project. Its supplied screenshot and public URL
+         are used in the featured card. The "open slot" cards remain intentional
+         placeholders — replace their artwork, title, description and status when
+         real work is ready. Never add a guessed project URL. -->
+    <section class="section section--projects" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">05</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Selected work</span>
+            </p>
+            <h2 class="section-title" data-split>Ideas, made <em>tangible.</em></h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 05</span>
+            <p class="section-lead">A growing collection of work at the intersection of education, the web, and the way students actually learn.</p>
+          </div>
+        </header>
+
+        <div class="project-feature-wrap" data-reveal>
+          <article class="project-feature" data-tilt data-tilt-max="1.6">
+            <div class="project-feature__glow" aria-hidden="true"></div>
+            <div class="project-feature__copy">
+              <div class="project-feature__meta">
+                <span class="tag tag--featured"><span aria-hidden="true">✦</span> Featured project</span>
+                <span class="mono-label">01 / 04</span>
+              </div>
+              <h3>Learn with<br><em>Zakir</em></h3>
+              <p class="project-feature__tagline">A live learning hub built for the way students actually revise.</p>
+              <p class="project-feature__description">A CBSE-focused resource platform for Classes VI–XII across Computer Science, IT, and Computer Applications. Students move from structured chapters to notes, solved Q&amp;As, practicals, previous-year papers, and online MCQ practice in one focused space.</p>
+              <ul class="project-feature__list" aria-label="Learn with Zakir features">
+                <li><span aria-hidden="true">01</span>Chapter-wise notes</li>
+                <li><span aria-hidden="true">02</span>PDF resources</li>
+                <li><span aria-hidden="true">03</span>Question &amp; answer library</li>
+                <li><span aria-hidden="true">04</span>Previous-year papers</li>
+                <li><span aria-hidden="true">05</span>Online MCQ tests</li>
+                <li><span aria-hidden="true">06</span>Practicals &amp; revision</li>
+              </ul>
+              <div class="project-tech">
+                <span class="project-tech__item"><span>Database</span><strong>Supabase</strong></span>
+                <span class="project-tech__item"><span>Deployment</span><strong>Render</strong></span>
+              </div>
+              <div class="project-feature__footer">
+                <span class="project-status"><i aria-hidden="true"></i>Live education platform</span>
+                <a class="text-link project-visit-link" href="https://learnwithzakir.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Learn with Zakir platform (opens in a new tab)">Visit live platform <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="project-feature__visual">
+              <div class="browser browser--live">
+                <div class="browser__chrome">
+                  <span class="browser__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="browser__url"><span aria-hidden="true">●</span>learnwithzakir.onrender.com</span>
+                  <span class="browser__more" aria-hidden="true">•••</span>
+                </div>
+                <a class="browser__live" href="https://learnwithzakir.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open the live Learn with Zakir website (opens in a new tab)">
+                  <picture>
+                    <source srcset="assets/img/learn-with-zakir-platform.webp" type="image/webp">
+                    <img class="browser__screenshot" src="assets/img/learn-with-zakir-platform.jpg" alt="Learn with Zakir chapter-wise learning resources dashboard showing class and subject selection" width="1600" height="803" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="browser__live-badge" aria-hidden="true"><i></i>Live</span>
+                  <span class="browser__live-hint" aria-hidden="true">Open live site <span>↗</span></span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-slots-head" data-reveal>
+          <h3>Next chapters</h3>
+          <p>Additional project spaces, ready for the work still taking shape.</p>
+        </div>
+
+        <div class="project-slots">
+          <div class="project-slot-wrap" data-reveal data-category-slot="web">
+            <article class="project-slot" data-tilt data-tilt-max="3">
+              <div class="project-slot__art project-slot__art--web" aria-hidden="true">
+                <span class="slot-orbit"></span>
+                <span class="slot-orbit slot-orbit--two"></span>
+                <span class="slot-code">&lt;div&gt;</span>
+                <span class="slot-badge">OPEN SLOT</span>
+              </div>
+              <div class="project-slot__body">
+                <div class="project-slot__meta"><span class="mono-label">02 / Web</span><span class="mono-label">Slot available</span></div>
+                <h3>A web experience, in progress.</h3>
+                <p>A reserved case study for a future full-stack project. The title, story, screenshots, and live link can be added when the build is ready.</p>
+                <span class="project-slot__status"><i aria-hidden="true"></i>Web development placeholder</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="project-slot-wrap" data-reveal data-category-slot="edtech" style="--delay: 80ms">
+            <article class="project-slot" data-tilt data-tilt-max="3">
+              <div class="project-slot__art project-slot__art--edtech" aria-hidden="true">
+                <span class="slot-ring"></span>
+                <span class="slot-ring slot-ring--two"></span>
+                <span class="slot-glyph">✦</span>
+                <span class="slot-badge">OPEN SLOT</span>
+              </div>
+              <div class="project-slot__body">
+                <div class="project-slot__meta"><span class="mono-label">03 / EdTech</span><span class="mono-label">Slot available</span></div>
+                <h3>Tools for a more curious classroom.</h3>
+                <p>A space for an educational-technology idea or learning tool. Add the project title, description, visuals, and link here when it exists.</p>
+                <span class="project-slot__status"><i aria-hidden="true"></i>Educational technology placeholder</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="project-slot-wrap" data-reveal data-category-slot="classroom" style="--delay: 160ms">
+            <article class="project-slot" data-tilt data-tilt-max="3">
+              <div class="project-slot__art project-slot__art--classroom" aria-hidden="true">
+                <span class="slot-grid"></span>
+                <span class="slot-circle">01</span>
+                <span class="slot-code">learn( );</span>
+                <span class="slot-badge">OPEN SLOT</span>
+              </div>
+              <div class="project-slot__body">
+                <div class="project-slot__meta"><span class="mono-label">04 / Classroom</span><span class="mono-label">Slot available</span></div>
+                <h3>The classroom, without walls.</h3>
+                <p>A placeholder for a digital classroom initiative or blended-learning experiment. Designed to grow as the idea takes shape.</p>
+                <span class="project-slot__status"><i aria-hidden="true"></i>Digital classroom placeholder</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TEACHING & RESOURCES
+         ============================================================ -->
+    <section class="section section--teaching" id="teaching">
+      <div class="section-aura section-aura--left" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">06</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Teaching &amp; resources</span>
+            </p>
+            <h2 class="section-title" data-split>Built for the<br><em>next lesson.</em></h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 06</span>
+            <p class="section-lead">Resources and methods designed to give students more ways in — and more reasons to keep going.</p>
+          </div>
+        </header>
+
+        <div class="resources-layout">
+          <div class="resources-intro" data-reveal>
+            <span class="mono-label">The resource shelf</span>
+            <p class="resources-quote">The lesson ends.<br><em>Learning doesn't.</em></p>
+            <p class="resources-description">A teaching practice supported by clear materials, practical exercises, and digital tools that let students revisit an idea whenever they need it.</p>
+
+            <div class="resources-orbit" aria-hidden="true">
+              <span class="resources-orbit__ring"></span>
+              <span class="resources-orbit__ring resources-orbit__ring--two"></span>
+              <span class="resources-orbit__core">R</span>
+              <i class="resources-orbit__dot resources-orbit__dot--one"></i>
+              <i class="resources-orbit__dot resources-orbit__dot--two"></i>
+              <i class="resources-orbit__dot resources-orbit__dot--three"></i>
+            </div>
+
+            <div class="resources-grow">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Designed to grow as the library grows</span>
+            </div>
+          </div>
+
+          <div class="resource-accordion" data-reveal style="--delay: 120ms">
+            <article class="resource is-open">
+              <h3>
+                <button class="resource__trigger" type="button" aria-expanded="true" aria-controls="resourcePanel1" id="resourceButton1">
+                  <span class="resource__number">01</span>
+                  <span class="resource__title">CS &amp; IT learning materials</span>
+                  <span class="resource__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="resource__panel" id="resourcePanel1" role="region" aria-labelledby="resourceButton1">
+                <div class="resource__panel-inner">
+                  <p>Structured notes and explanations that turn a dense syllabus into clear, revisitable concepts. Built for first understanding and later revision.</p>
+                  <div class="resource__footer">
+                    <div class="tag-row"><span class="tag">Chapter notes</span><span class="tag">Concept maps</span><span class="tag">Revision sheets</span></div>
+                    <span class="resource__type">Notes / Theory</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resource">
+              <h3>
+                <button class="resource__trigger" type="button" aria-expanded="false" aria-controls="resourcePanel2" id="resourceButton2">
+                  <span class="resource__number">02</span>
+                  <span class="resource__title">Practical programming exercises</span>
+                  <span class="resource__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="resource__panel" id="resourcePanel2" role="region" aria-labelledby="resourceButton2">
+                <div class="resource__panel-inner">
+                  <p>Guided problems that move students from syntax to solving something real. Starting points, challenge tasks, and debugging drills that build fluency.</p>
+                  <div class="resource__footer">
+                    <div class="tag-row"><span class="tag">Python</span><span class="tag">Lab tasks</span><span class="tag">Debugging</span></div>
+                    <span class="resource__type">Practice / Labs</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resource">
+              <h3>
+                <button class="resource__trigger" type="button" aria-expanded="false" aria-controls="resourcePanel3" id="resourceButton3">
+                  <span class="resource__number">03</span>
+                  <span class="resource__title">Digital learning resources</span>
+                  <span class="resource__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="resource__panel" id="resourcePanel3" role="region" aria-labelledby="resourceButton3">
+                <div class="resource__panel-inner">
+                  <p>Visual explainers and downloadable resources designed for anytime access, so students can pause, revisit, and learn at their own pace.</p>
+                  <div class="resource__footer">
+                    <div class="tag-row"><span class="tag">PDFs</span><span class="tag">Visual notes</span><span class="tag">Self-study</span></div>
+                    <span class="resource__type">Digital / Self-paced</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resource">
+              <h3>
+                <button class="resource__trigger" type="button" aria-expanded="false" aria-controls="resourcePanel4" id="resourceButton4">
+                  <span class="resource__number">04</span>
+                  <span class="resource__title">Online quizzes &amp; assessments</span>
+                  <span class="resource__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="resource__panel" id="resourcePanel4" role="region" aria-labelledby="resourceButton4">
+                <div class="resource__panel-inner">
+                  <p>Quick checks and question practice that make understanding visible. Topic-wise MCQs and review sets built around feedback, not just scores.</p>
+                  <div class="resource__footer">
+                    <div class="tag-row"><span class="tag">MCQ practice</span><span class="tag">Topic checks</span><span class="tag">Review</span></div>
+                    <span class="resource__type">Assessment / Feedback</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resource">
+              <h3>
+                <button class="resource__trigger" type="button" aria-expanded="false" aria-controls="resourcePanel5" id="resourceButton5">
+                  <span class="resource__number">05</span>
+                  <span class="resource__title">Classroom technology integration</span>
+                  <span class="resource__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="resource__panel" id="resourcePanel5" role="region" aria-labelledby="resourceButton5">
+                <div class="resource__panel-inner">
+                  <p>Purposeful use of digital tools to make lessons more active and connected — from live demos to digital submission and blended-learning workflows.</p>
+                  <div class="resource__footer">
+                    <div class="tag-row"><span class="tag">Live demos</span><span class="tag">Blended learning</span><span class="tag">Digital workflows</span></div>
+                    <span class="resource__type">Classroom / Integration</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CREDENTIALS
+         ============================================================ -->
+    <section class="section section--recognition" id="recognition">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__main">
+            <p class="section-kicker" data-reveal>
+              <span class="section-kicker__number">07</span>
+              <span class="section-kicker__rule" aria-hidden="true"></span>
+              <span>Credentials</span>
+            </p>
+            <h2 class="section-title" data-split>Foundations first.<br><em>Learning</em> always.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal style="--delay: 120ms">
+            <span class="section-index" aria-hidden="true">/ 07</span>
+            <p class="section-lead">Degrees, formal training, classroom recognition, and supporting documents — documented with care and kept honest.</p>
+          </div>
+        </header>
+
+        <div class="credentials-layout">
+          <div class="credentials-intro" data-reveal>
+            <div class="credentials-orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <i>ZH</i>
+            </div>
+            <h3>A record of<br><em>intentional learning.</em></h3>
+            <p>Degrees, classroom recognition, and formal training — gathered here with the supporting documents.</p>
+            <div class="verified-note">
+              <span class="verified-note__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/><circle cx="12" cy="12" r="10"/></svg>
+              </span>
+              <span><strong>Verified information only.</strong><br>Details sourced from the résumé and supplied credential documents. No invented badges or awards.</span>
+            </div>
+          </div>
+
+          <!-- EDIT CREDENTIALS
+               Degrees and achievements below come from the supplied résumé.
+               The certificate gallery uses the supplied completion certificates and
+               DIPS letter of appreciation. Replace images and details only with
+               genuine documents. -->
+          <div class="credential-list">
+            <article class="credential" data-reveal>
+              <div class="credential__ordinal"><span>01</span><span>Degree</span></div>
+              <div class="credential__main">
+                <h3>Bachelor of Computer Science</h3>
+                <p>University of Kashmir, Srinagar</p>
+                <span class="credential__meta">June 2016 — May 2020<span class="dot-sep" aria-hidden="true">·</span>Graduated with distinction</span>
+              </div>
+              <span class="credential__status">Academic foundation</span>
+            </article>
+
+            <article class="credential" data-reveal style="--delay: 80ms">
+              <div class="credential__ordinal"><span>02</span><span>Degree</span></div>
+              <div class="credential__main">
+                <h3>Master of Computer Science</h3>
+                <p>I.K. Gujral Punjab Technical University, Jalandhar</p>
+                <span class="credential__meta">August 2021 — March 2023<span class="dot-sep" aria-hidden="true">·</span>Programming · DBMS · Networking · Software engineering</span>
+              </div>
+              <span class="credential__status">Advanced study</span>
+            </article>
+
+            <article class="credential credential--achievement credential--wide" data-reveal style="--delay: 160ms">
+              <div class="credential__ordinal"><span>03</span><span>Achievement</span></div>
+              <div class="credential__main">
+                <h3>Best Teacher of the Month</h3>
+                <p>Recognised three times during the academic year 2020/21.</p>
+                <ul class="achievement-list">
+                  <li>Guided students in computer projects and presentations with excellent outcomes.</li>
+                  <li>Supported the school in adopting digital processes and improving academic efficiency.</li>
+                  <li>Received a Letter of Appreciation from DIPS Management for excellent CBSE Board results and students placed under distinction.</li>
+                </ul>
+              </div>
+              <span class="credential__status">From résumé &amp; letter</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="certificate-showcase" data-reveal>
+          <div class="certificate-showcase__head">
+            <div>
+              <p class="section-kicker section-kicker--small">
+                <span class="section-kicker__number">07.1</span>
+                <span class="section-kicker__rule" aria-hidden="true"></span>
+                <span>Supporting documents</span>
+              </p>
+              <h3>Certificates &amp;<br><em>appreciation.</em></h3>
+            </div>
+            <p>Completion certificates, quiz recognition, and a letter of appreciation, shared as supplied. Select any document to open the full image.</p>
+          </div>
+
+          <div class="certificate-gallery">
+            <article class="certificate-card">
+              <a class="certificate-card__link" href="assets/img/certificates/certificate-c-cpp.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the C and C++ training certificate from WExcellence Technology (opens in a new tab)">
+                <div class="certificate-card__media">
+                  <picture>
+                    <source srcset="assets/img/certificates/certificate-c-cpp.webp" type="image/webp">
+                    <img src="assets/img/certificates/certificate-c-cpp.jpg" alt="C and C++ training completion certificate from WExcellence Technology, Chandigarh, awarded to Zakir Hussain on 15 September 2025" width="1440" height="960" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="certificate-card__badge">Training</span>
+                  <span class="certificate-card__open" aria-hidden="true">Open certificate <span>↗</span></span>
+                </div>
+                <div class="certificate-card__body">
+                  <span class="certificate-card__category">Professional development</span>
+                  <h4>C &amp; C++ Training Programme</h4>
+                  <p class="certificate-card__issuer">WExcellence Technology · Chandigarh</p>
+                  <span class="certificate-card__meta">Completed 15 September 2025</span>
+                  <span class="certificate-card__cta">View certificate <span aria-hidden="true">↗</span></span>
+                </div>
+              </a>
+            </article>
+
+            <article class="certificate-card">
+              <a class="certificate-card__link" href="assets/img/certificates/certificate-web-development.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the Web Development certificate from Learn with Zakir (opens in a new tab)">
+                <div class="certificate-card__media">
+                  <picture>
+                    <source srcset="assets/img/certificates/certificate-web-development.webp" type="image/webp">
+                    <img src="assets/img/certificates/certificate-web-development.jpg" alt="Web Development HTML, CSS and JavaScript completion certificate from Learn with Zakir, awarded to Zakir Hussain on 15 August 2024" width="1440" height="960" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="certificate-card__badge">Course</span>
+                  <span class="certificate-card__open" aria-hidden="true">Open certificate <span>↗</span></span>
+                </div>
+                <div class="certificate-card__body">
+                  <span class="certificate-card__category">Web development</span>
+                  <h4>Web Development (HTML, CSS, JavaScript)</h4>
+                  <p class="certificate-card__issuer">Learn with Zakir</p>
+                  <span class="certificate-card__meta">Completed 15 August 2024 · ID LWZ-WD-2024-001</span>
+                  <span class="certificate-card__cta">View certificate <span aria-hidden="true">↗</span></span>
+                </div>
+              </a>
+            </article>
+
+            <article class="certificate-card certificate-card--quiz">
+              <a class="certificate-card__link" href="assets/img/certificates/certificate-c-programming-quiz.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the C Programming quiz certificate from Guru Nanak Dev Engineering College (opens in a new tab)">
+                <div class="certificate-card__media">
+                  <picture>
+                    <source srcset="assets/img/certificates/certificate-c-programming-quiz.webp" type="image/webp">
+                    <img src="assets/img/certificates/certificate-c-programming-quiz.jpg" alt="Certificate of Appreciation from Guru Nanak Dev Engineering College for completing the C Programming quiz, awarded to Zakir Hussain on 4 June 2020" width="1440" height="810" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="certificate-card__badge">Quiz</span>
+                  <span class="certificate-card__open" aria-hidden="true">Open certificate <span>↗</span></span>
+                </div>
+                <div class="certificate-card__body">
+                  <span class="certificate-card__category">Quiz certificate</span>
+                  <h4>C Programming Quiz</h4>
+                  <p class="certificate-card__issuer">Guru Nanak Dev Engineering College · Department of ISE</p>
+                  <span class="certificate-card__meta">Completed 4 June 2020 · ID WEYSVI-CE000191</span>
+                  <span class="certificate-card__cta">View certificate <span aria-hidden="true">↗</span></span>
+                </div>
+              </a>
+            </article>
+
+            <article class="certificate-card certificate-card--document">
+              <a class="certificate-card__link" href="assets/img/certificates/dips-letter-of-appreciation.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the Letter of Appreciation from DIPS Institutions (opens in a new tab)">
+                <div class="certificate-card__media">
+                  <picture>
+                    <source srcset="assets/img/certificates/dips-letter-of-appreciation.webp" type="image/webp">
+                    <img src="assets/img/certificates/dips-letter-of-appreciation.jpg" alt="Letter of Appreciation from Chain of DIPS Institutions to Zakir Hussain for excellent CBSE Board results and student distinctions" width="1100" height="1555" loading="lazy" decoding="async">
+                  </picture>
+                  <span class="certificate-card__badge">Letter</span>
+                  <span class="certificate-card__open" aria-hidden="true">Open letter <span>↗</span></span>
+                </div>
+                <div class="certificate-card__body">
+                  <span class="certificate-card__category">Recognition</span>
+                  <h4>Letter of Appreciation</h4>
+                  <p class="certificate-card__issuer">Chain of DIPS Institutions · DIPS School, Gilzian</p>
+                  <span class="certificate-card__meta">Awarded by DIPS Management for excellent CBSE Board results and student distinctions.</span>
+                  <span class="certificate-card__cta">View letter <span aria-hidden="true">↗</span></span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section class="section section--contact" id="contact">
+      <div class="contact-aura" aria-hidden="true"></div>
+      <div class="contact-grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact-topline" data-reveal>
+          <p class="section-kicker">
+            <span class="section-kicker__number">08</span>
+            <span class="section-kicker__rule" aria-hidden="true"></span>
+            <span>Contact</span>
+          </p>
+          <span class="mono-label">Open to ideas / collaboration / good questions</span>
+        </div>
+
+        <h2 class="contact-title" data-split>Let's Build<br>Something <em>Meaningful.</em></h2>
+
+        <div class="contact-layout">
+          <div class="contact-copy" data-reveal>
+            <p class="contact-lead">Interested in education, technology, collaboration, or innovative learning experiences? Let's connect.</p>
+            <a class="contact-email-link" href="mailto:zakhu1099@gmail.com?subject=Hello%20Zakir%20%E2%80%94%20let%27s%20connect">
+              <span class="contact-email-link__label">Start a conversation</span>
+              <span class="contact-email-link__value" id="contactEmail">zakhu1099@gmail.com</span>
+              <span class="contact-email-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></svg>
+              </span>
+            </a>
+            <div class="contact-copy__row">
+              <button class="copy-button" type="button" id="copyEmail" data-copy-target="#contactEmail">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="10" height="10" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg>
+                <span>Copy email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- EDIT CONTACT DETAILS
+               Email and phone come from the supplied résumé. Update the mailto:
+               target, the visible #contactEmail span, and the tel: link together
+               if they change. The GitHub profile URL is live. -->
+          <div class="contact-card" data-reveal style="--delay: 120ms">
+            <div class="contact-card__head">
+              <span class="mono-label">Direct &amp; code</span>
+              <span class="mono-label">Contact / 02</span>
+            </div>
+
+            <div class="contact-links">
+              <a class="contact-link" href="tel:+919541167365">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.4a14 14 0 0 0 6.1 6.1l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17.4 17.4 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+                </span>
+                <span class="contact-link__body"><span class="contact-link__label">Phone</span><span class="contact-link__value">+91 95411 67365</span></span>
+              </a>
+              <a class="contact-link" href="https://github.com/Zakirhu" target="_blank" rel="noopener noreferrer" aria-label="Visit Zakir Hussain's GitHub profile (opens in a new tab)">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 9 3.5 12 8 15M16 9l4.5 3L16 15M14 5l-4 14"/></svg>
+                </span>
+                <span class="contact-link__body"><span class="contact-link__label">GitHub</span><span class="contact-link__value">github.com/Zakirhu</span></span>
+                <span class="contact-link__external" aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="contact-card__foot">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Ready for thoughtful conversations and meaningful work.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-bottom" data-reveal>
+          <span class="contact-bottom__line" aria-hidden="true"></span>
+          <p>Good learning starts with a good question.</p>
+          <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4M6 9.5 12 4l6 5.5"/></svg>
+            <span>Back to top</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#home" aria-label="Zakir Hussain — back to home">
+            <span class="brand__mark" aria-hidden="true">ZH<span class="brand__dot"></span></span>
+            <span class="brand__name">Zakir<br><span>Hussain</span></span>
+          </a>
+          <p>Computer Science educator, web developer, and builder of learning experiences.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div>
+            <span class="footer-nav__label">Explore</span>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#philosophy">Philosophy</a>
+          </div>
+          <div>
+            <span class="footer-nav__label">Discover</span>
+            <a href="#projects">Projects</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#recognition">Credentials</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="footer-note">
+          <span class="footer-nav__label">Colophon</span>
+          <p>Designed and built with intent.<br>HTML, CSS, JavaScript, and a little curiosity.</p>
+          <span class="footer-note__live"><i aria-hidden="true"></i>Portfolio / <span data-year>2026</span></span>
+        </div>
+      </div>
+
+      <div class="footer-watermark" aria-hidden="true">ZAKIR HUSSAIN</div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Zakir Hussain. All rights reserved.</p>
+        <p class="footer-bottom__center">Educator. Innovator. Developer.</p>
+        <button class="footer-top" type="button" data-back-to-top>
+          Back to top <span aria-hidden="true">↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+.pnpm-store/
+.preview/
+.chrome-profile*/
+.chrome-cdp/
+.dsh-office-*/
+.dsh-photo-*/
+.photo-preview*
+*.log

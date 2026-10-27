@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Zakir Hussain — Social Cover</title>
+<style>
+  @font-face { font-family: "Space Grotesk"; src: url("../assets/fonts/space-grotesk.woff2") format("woff2"); font-weight: 300 700; }
+  @font-face { font-family: "Manrope"; src: url("../assets/fonts/manrope.woff2") format("woff2"); font-weight: 300 800; }
+  @font-face { font-family: "Instrument Serif"; src: url("../assets/fonts/instrument-serif-italic.woff2") format("woff2"); font-style: italic; font-weight: 400; }
+  @font-face { font-family: "JetBrains Mono"; src: url("../assets/fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 400 600; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1200px; height: 630px; background: #05070c; overflow: hidden; }
+  body {
+    position: relative;
+    color: #f4f7ff;
+    font-family: "Manrope", sans-serif;
+    background:
+      radial-gradient(ellipse at 82% 40%, rgba(34, 69, 135, 0.55), transparent 43%),
+      radial-gradient(ellipse at 22% 100%, rgba(33, 85, 143, 0.24), transparent 45%),
+      #05070c;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(113, 161, 255, 0.075) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(113, 161, 255, 0.075) 1px, transparent 1px);
+    background-size: 62px 62px;
+    mask-image: radial-gradient(ellipse at 70% 45%, black 2%, transparent 75%);
+  }
+  .glow-a, .glow-b { position: absolute; border-radius: 50%; filter: blur(100px); }
+  .glow-a { width: 520px; height: 430px; left: -200px; top: -180px; background: rgba(30, 170, 214, 0.18); }
+  .glow-b { width: 560px; height: 560px; right: -160px; top: -60px; background: rgba(112, 70, 207, 0.22); }
+  .frame {
+    position: absolute; inset: 20px;
+    border: 1px solid rgba(164, 199, 255, 0.16);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.025), transparent 40%);
+    overflow: hidden;
+  }
+  .frame::before {
+    content: ""; position: absolute; top: 0; left: 12%; width: 44%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(95, 231, 255, 0.8), transparent);
+  }
+  .top {
+    position: absolute; top: 32px; left: 40px; right: 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-bottom: 18px; border-bottom: 1px solid rgba(166, 201, 255, 0.14);
+  }
+  .brandline { display: flex; align-items: center; gap: 14px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 11px;
+    border: 1px solid rgba(175, 207, 255, 0.25);
+    display: grid; place-items: center;
+    font-family: "Space Grotesk", sans-serif; font-size: 14px; font-weight: 600; letter-spacing: -0.09em;
+    background: rgba(255,255,255,0.035);
+    position: relative;
+  }
+  .mark::after { content: ""; position: absolute; top: 8px; right: 8px; width: 4px; height: 4px; border-radius: 50%; background: #5fe7ff; box-shadow: 0 0 8px #5fe7ff; }
+  .brandline span { font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.13em; color: rgba(216, 229, 255, 0.62); text-transform: uppercase; }
+  .top > span { font-family: "JetBrains Mono", monospace; font-size: 10px; color: rgba(216, 229, 255, 0.46); letter-spacing: 0.13em; }
+  .content { position: absolute; left: 40px; top: 129px; width: 682px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #aebbd4; border: 1px solid rgba(164, 199, 255, 0.17); border-radius: 999px; padding: 7px 11px;
+    background: rgba(255,255,255,0.025);
+  }
+  .eyebrow::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #5fe7ff; box-shadow: 0 0 10px rgba(95, 231, 255, 0.9); }
+  h1 {
+    margin: 22px 0 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 116px;
+    line-height: 0.79;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -0.075em;
+  }
+  h1 .name-accent {
+    width: fit-content;
+    background: linear-gradient(106deg, #74efff, #8d9fff 50%, #c197ff);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  h1 .dot { color: #5fe7ff; -webkit-text-fill-color: #5fe7ff; font-family: "Instrument Serif", serif; font-style: italic; font-size: 0.74em; }
+  .tagline { margin: 22px 0 0; font-family: "Instrument Serif", serif; font-style: italic; font-size: 37px; line-height: 1; color: #eef3ff; }
+  .tagline em { font-style: italic; color: #9aaeff; }
+  .tagline b { font-weight: 400; background: linear-gradient(105deg, #6deaff, #c197ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .desc { margin: 17px 0 0; width: 540px; color: #9eabc2; font-size: 15px; line-height: 1.6; letter-spacing: -0.01em; }
+  .visual {
+    position: absolute; right: 37px; top: 135px; width: 395px; height: 395px;
+    display: grid; place-items: center;
+  }
+  .visual::before {
+    content: ""; position: absolute; inset: -15px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(68, 150, 255, 0.15), rgba(108, 68, 209, 0.06) 45%, transparent 68%);
+    filter: blur(8px);
+  }
+  .ring { position: absolute; border: 1px solid rgba(170, 203, 255, 0.16); border-radius: 50%; }
+  .ring.one { inset: 44px; border-color: rgba(95, 231, 255, 0.22); }
+  .ring.two { inset: 76px; border-style: dashed; border-color: rgba(178, 198, 255, 0.2); }
+  .ring.three { inset: 4px; border-color: rgba(174, 195, 255, 0.08); }
+  .sat { position: absolute; width: 7px; height: 7px; border-radius: 50%; background: #5fe7ff; box-shadow: 0 0 17px rgba(95, 231, 255, 0.9); }
+  .sat.one { top: 54px; right: 78px; }
+  .sat.two { bottom: 74px; left: 55px; width: 4px; height: 4px; background: #b48cff; box-shadow: 0 0 14px #b48cff; }
+  .hub {
+    position: relative; z-index: 3;
+    width: 184px; height: 184px; border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(172, 207, 255, 0.3);
+    background: #0b1220;
+    box-shadow:
+      0 0 0 9px rgba(95, 231, 255, 0.035),
+      0 0 0 1px rgba(95, 231, 255, 0.13),
+      0 24px 55px rgba(0, 0, 0, 0.36),
+      0 0 70px rgba(45, 118, 255, 0.16);
+  }
+  .hub img { width: 100%; height: 100%; object-fit: cover; object-position: center 24%; filter: saturate(0.92) contrast(1.03); }
+  .hub::after {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(180deg, transparent 52%, rgba(3, 8, 16, 0.5)), linear-gradient(145deg, rgba(95, 231, 255, 0.05), rgba(133, 98, 235, 0.1));
+    pointer-events: none;
+  }
+  .hub__label {
+    position: absolute; left: 50%; bottom: 12px; z-index: 2;
+    transform: translateX(-50%);
+    padding: 5px 8px; border: 1px solid rgba(177, 208, 255, 0.25); border-radius: 999px;
+    background: rgba(8, 14, 24, 0.72);
+    color: #d9e7ff; font-family: "JetBrains Mono", monospace; font-size: 7px; letter-spacing: 0.13em; text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    white-space: nowrap;
+  }
+  .chip {
+    position: absolute; z-index: 4;
+    padding: 7px 10px; border-radius: 999px; border: 1px solid rgba(168, 201, 255, 0.19);
+    background: rgba(10, 17, 29, 0.82);
+    color: #9eabc2; font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: 0.09em; text-transform: uppercase;
+  }
+  .chip::before { content: "· "; color: #5fe7ff; }
+  .chip.a { top: 71px; right: 4px; }
+  .chip.b { left: -3px; bottom: 97px; }
+  .chip.c { right: 45px; bottom: 23px; }
+  .foot {
+    position: absolute; bottom: 31px; left: 40px; right: 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 17px; border-top: 1px solid rgba(166, 201, 255, 0.14);
+    color: #78859d; font-family: "JetBrains Mono", monospace; font-size: 9px; letter-spacing: 0.11em; text-transform: uppercase;
+  }
+  .foot b { color: #a9b4ca; font-weight: 400; }
+  .foot .sep { margin: 0 9px; color: rgba(182, 204, 255, 0.25); }
+  .corner { position: absolute; width: 12px; height: 12px; opacity: 0.5; }
+  .corner::before, .corner::after { content: ""; position: absolute; background: #78859d; }
+  .corner::before { width: 12px; height: 1px; top: 5px; }
+  .corner::after { height: 12px; width: 1px; left: 5px; }
+  .tl { top: 88px; left: 64px; } .tr { top: 88px; right: 64px; }
+  .bl { bottom: 88px; left: 64px; } .br { bottom: 88px; right: 64px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow-a"></div>
+  <div class="glow-b"></div>
+  <div class="frame">
+    <div class="top">
+      <div class="brandline">
+        <span class="mark">ZH</span>
+        <span>Zakir Hussain / Portfolio</span>
+      </div>
+      <span>Educator · Innovator · Developer</span>
+    </div>
+    <div class="content">
+      <span class="eyebrow">PGT Computer Science / IT / Educator &amp; Developer</span>
+      <h1>Zakir<br><span class="name-accent">Hussain<span class="dot">.</span></span></h1>
+      <p class="tagline">Educator. <em>Innovator.</em> <b>Developer.</b></p>
+      <p class="desc">Transforming Computer Science Education Through Technology, Creativity, and Practical Learning.</p>
+    </div>
+    <div class="visual">
+      <span class="ring three"></span>
+      <span class="ring one"></span>
+      <span class="ring two"></span>
+      <span class="sat one"></span>
+      <span class="sat two"></span>
+      <div class="hub">
+        <img src="../assets/img/zakir-hussain-portrait.jpg" alt="">
+        <span class="hub__label">PGT · Educator</span>
+      </div>
+      <span class="chip a">Python</span>
+      <span class="chip b">Pedagogy</span>
+      <span class="chip c">Web</span>
+    </div>
+    <div class="corner tl"></div><div class="corner tr"></div>
+    <div class="corner bl"></div><div class="corner br"></div>
+    <div class="foot">
+      <span><b>Bachelor of CS</b><span class="sep">/</span><b>Master of CS</b><span class="sep">/</span><b>Teaching</b><span class="sep">/</span><b>Web</b><span class="sep">/</span><b>EdTech</b></span>
+      <span>Computer Science · Teaching · Making</span>
+    </div>
+  </div>
+</body>
+</html>
